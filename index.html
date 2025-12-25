@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Attendance App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>📋 Dynamic Attendance App</h2>
+
+    <!-- Date input -->
+    <div class="date-input">
+      <label for="attendance-date"><strong>Date:</strong></label>
+      <input type="date" id="attendance-date" />
+    </div>
+
+    <!-- Add student form -->
+    <div class="add-student-form">
+      <input type="text" id="student-name" placeholder="Student Name" />
+      <input type="text" id="student-enroll" placeholder="Enrollment Number" />
+      <button class="btn" id="add-student-btn">➕ Add Student</button>
+      <button class="btn" id="reset-btn" style="background:#ef4444;">🗑 Reset Class List</button>
+    </div>
+
+    <!-- Attendance table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Enrollment</th>
+          <th>Present</th>
+          <th>Absent</th>
+        </tr>
+      </thead>
+      <tbody id="student-table"></tbody>
+    </table>
+
+    <!-- WhatsApp button -->
+    <div class="actions">
+      <button class="btn" id="send-whatsapp-btn">📲 Send to WhatsApp</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

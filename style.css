@@ -1,0 +1,92 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  margin: 0; padding: 40px 20px; color: #e2e8f0;
+}
+
+.container {
+  max-width: 960px; 
+  margin: auto; 
+  background: rgba(30, 41, 59, 0.5); 
+  backdrop-filter: blur(16px); 
+  border-radius: 20px; 
+  padding: 30px; 
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  text-align: center; 
+  font-size: 28px; 
+  font-weight: 700; 
+  color: #93c5fd; 
+  margin-bottom: 20px;
+}
+
+.date-input, .add-student-form {
+  text-align: center; 
+  margin-bottom: 30px;
+}
+
+.date-input input, .add-student-form input {
+  padding: 10px 16px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 12px; 
+  outline: none; 
+  background: #334155; 
+  color: #f1f5f9; 
+  margin: 5px;
+}
+
+.btn {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white; 
+  padding: 14px 24px; 
+  border: none; 
+  font-size: 16px; 
+  border-radius: 12px; 
+  cursor: pointer; 
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+table { 
+  width: 100%; 
+  border-collapse: separate; 
+  border-spacing: 0 10px; 
+}
+
+th {
+  background: #475569; 
+  color: #e2e8f0; 
+  padding: 12px; 
+  font-weight: 600; 
+  text-align: center; 
+  border-radius: 10px 10px 0 0;
+}
+
+td {
+  background: #1e293b; 
+  color: #f8fafc; 
+  text-align: center; 
+  padding: 12px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+input[type="checkbox"] { 
+  transform: scale(1.2); 
+  cursor: pointer; 
+  accent-color: #6366f1; 
+}
+
+@media (max-width: 600px) { 
+  table, thead, tbody, th, td, tr { font-size: 14px; } 
+  .btn { width: 100%; } 
+}
